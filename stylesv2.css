@@ -1,0 +1,387 @@
+* {
+    background: #bbe3d0;
+    font-family: 'Inter';
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* For mobile phones: */
+.main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-bottom: 50px;
+    position: relative;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: #F3F5FC;
+
+}
+
+.header{
+    background: #bbe3d0;
+    width: 100%;
+    height: 70px;
+    border: none;
+}
+
+#logo{
+    padding-top: 10px;
+
+    width: 25%;
+    margin-left: 10px;
+}
+
+.section1{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.condiciones{
+    display:flex;
+    flex-direction:row;
+    gap:8px;
+    align-self: flex-start;
+    color:#67808E;
+    font-size: 12px;
+    line-height:150%;
+}
+
+.textarea1{
+    max-width: 90%;
+    height: 65%;
+    color: #0A3871;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    height: 100%;
+    margin-top: 90px;
+    text-transform: lowercase;
+    overflow:auto;
+    border: none;
+}
+
+.textarea1::placeholder{
+    color:#0A3871;
+    text-align: center;
+    font-size:20px;
+}
+
+.textarea1:focus{
+    outline: none;
+}
+
+.texto1{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    gap:8px;
+    width: 100%;
+    
+}
+
+
+[class *= "boton-"] {
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    width: 100%;
+    border-color: #0A3871;
+    
+}
+
+.boton-encriptar{
+    background-color: rgba(12, 74, 87, 0.774);
+    color: rgb(255, 255, 255, 1);
+}
+
+.boton-encriptar:hover{
+    background-color: rgba(0, 169, 199, 0.774);
+    cursor: pointer;
+}
+
+.boton-desencriptar{
+    background-color: rgba(193, 197, 197, 0.774);
+    color:rgba(10, 56, 113, 1);
+    border-color: rgba(10, 56, 113, 1);
+}
+
+.boton-desencriptar:hover{
+    background-color: rgba(0, 169, 199, 0.774);
+    cursor: pointer;
+}
+.boton-desencriptar,.boton-desencriptar:hover{
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.boton-copiar{
+    background-color: rgba(216, 223, 232, 1);
+    color:rgba(10, 56, 113, 1);
+    border-color: rgba(10, 56, 113, 1);
+    width: 60%;
+}
+
+.boton-copiar:hover{
+    background-color: rgb(174, 188, 204);
+}
+.boton-copiar:hover{
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.section2{
+    width: 100%;
+    min-height:fit-content;
+    padding: 32px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    
+    margin-top: 40px;
+    overflow: auto;
+    font-weight: 400;
+}
+
+.mensaje-encriptado{
+    background: var(--White, #FFF);
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.textarea2{
+    background: var(--White, #FFF);
+    background-image: url('imagen/Muñeco.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    border-radius: 24px;
+    margin-top: 20px;
+    padding-left: 20px;
+    max-width: 100%;
+    height: auto;
+    text-align:center;
+    color: #0A3871;
+    border: none;
+}
+
+.textarea2:focus{
+    outline: none;
+}
+
+#texto1{
+    background: var(--White, #FFF);
+    font-weight:bold;
+
+   }
+
+.footer {
+    position:absolute;
+    height:50px;
+    line-height:50px;
+    background:rgb(1, 109, 104);
+    color:white;
+    text-align:center;
+    left:0;
+    width:100%;
+}
+  
+.footer.bottom {
+    bottom:0;
+}
+
+
+
+
+
+/* For tablet */
+@media only screen and (min-width: 768px) {
+    .main{
+        display: flex;
+        height: 85%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15.8%;  
+        font-size: 100px;      
+    }
+
+.section1{
+    top:32px;
+}
+
+
+.section2{
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    margin: 32px;
+    width: 91.5%;
+}
+
+#logo{
+    width: 10%;
+}
+
+.condiciones{
+    margin-left: 32px;
+    top: 330%;
+
+}
+.botones{
+
+    flex-direction: row;
+    align-items: center;
+    gap:24px;
+    width: 91.5%;
+    
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+
+
+}
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+
+    .main{
+        display: flex;
+        position: absolute;
+        height: 85%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15.8%;
+        font-size: 50px;
+    }
+    .section1{
+        position: absolute;
+        margin: 32px;
+        width: 50%;
+        margin-top:  100px;
+    }
+
+    
+    .textarea1{
+        min-width: 90%;
+        position: relative;
+        margin-top: 32px;
+        top: 32px;
+
+    }
+
+    .textarea1::placeholder{
+        color:#0A3871;
+        text-align: center;
+        font-size: 32px;
+        
+    }
+
+    #logo{
+        width: 8%;
+    }
+
+    .section2{
+        background: var(--White, #FFF);
+        position: relative;
+        display:inline-flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        width: 31%;
+        height: 944px;
+        padding: 20px;
+        left: 50%;
+        margin: 40px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5)
+    }
+   
+    .textarea2{
+        background: var(--White, #FFF);
+        background-image: url('imagen/Muñeco.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border-radius: 24px;
+        margin-top: 20px;
+        padding-left: 20px;
+        max-width: 100%;
+        min-height: 80%;
+        height: auto;
+        text-align:center;
+        color: #0A3871;
+        border: none;
+    }
+
+   #texto1{
+    background: var(--White, #FFF);
+    font-weight:bold;
+
+   }
+
+
+
+    .condiciones{
+        position: absolute;
+        top: 750px;
+        display: flex;
+              
+    }
+
+    .botones{
+        position: absolute;
+        align-items: center;
+        gap:24px;
+        width: 91.5%;
+        top: 800px;
+        height: 80px;
+        margin-left: 32px;
+        margin-right: 32px;
+
+    }
+
+    .mensaje-encriptado{
+        background: var(--White, #FFF);
+        position: absolute;
+        box-sizing: border-box;
+        height: 50%;
+
+    }
+
+    .boton-copiar{
+        position: relative;
+        background-color: rgba(216, 223, 232, 1);
+        color:rgba(10, 56, 113, 1);
+        border-color: rgba(10, 56, 113, 1);
+        top: 100px;
+        width: 333px;
+
+    }
+}
