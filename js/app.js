@@ -57,12 +57,12 @@ function desencriptar(stringDesencriptado){
 
 /* Función Copiar */
 
-function btnCopiar(){
+/* function btnCopiar(){
     const textoCopiado = copiar(textArea2.value)
     mensaje.value = textoCopiado
     textArea2.value = "";
 
-}
+} */
 
 const textArea2 = document.querySelector('.textarea2');
 const button = document.querySelector(".boton-copiar");
