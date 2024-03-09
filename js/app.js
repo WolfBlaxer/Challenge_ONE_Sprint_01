@@ -43,12 +43,12 @@ function btnDesencriptar(){
 }
 
 function desencriptar(stringDesencriptado){
-    let matrizCodigo =[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]]
+    let matrizCodigo =[["u","ufat"],["o","ober"],["a","ai"],["i","imes"],["e","enter"]]
     stringDesencriptado = stringDesencriptado.toLowerCase()
     document.getElementById("texto1").style.display = "none"
 
-    for(let i=0; i < matrizCodigo.length; i++){
-        if(stringDesencriptado.includes(matrizCodigo[i][0])){
+    for(let i=0; i < (matrizCodigo.length); i++){
+        if(stringDesencriptado.includes(matrizCodigo[i][1])){
             stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0])
         }
     }

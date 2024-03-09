@@ -180,7 +180,7 @@
     background: var(--White, #FFF);
     background-image: url('imagen/Muñeco.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 50px;
     background-size:contain;
     border-radius: 24px;
     margin-top: 20px;
@@ -199,6 +199,7 @@
 #texto1{
     background: var(--White, #FFF);
     font-weight:bold;
+    
 
    }
 
@@ -327,7 +328,7 @@
         background: var(--White, #FFF);
         background-image: url('imagen/Muñeco.svg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center 50px;
         background-size: contain;
         border-radius: 24px;
         margin-top: 20px;
